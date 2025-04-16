@@ -181,7 +181,7 @@ jobs:
           git tag -a "v${{ env.version }}" -m "Hotfix v${{ env.version }}"
           git push origin "v${{ env.version }}"
           
-          # Criar a releaseeee
+          # Criar a release
           gh release create "v${{ env.version }}" \
             --title "Hotfix v${{ env.version }}" \
             --notes "Hotfix v${{ env.version }}"
